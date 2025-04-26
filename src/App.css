@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #24ffed; 
+  text-align: center;
+}
+
+h1 {
+  margin-top: 20px;
+  color: #FF70AB; /* Bright pink color for title */
+}
+
+.game {
+  display: inline-block;
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #ffdfae; 
+  border-radius: 15px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
+  justify-content: center;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  background-color: #97ffba; 
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 8px;
+}
+
+.cell:hover {
+  background-color: #FF70AB; /* Pink on hover */
+}
+
+.status {
+  margin-top: 40px;
+  font-size: 20px;
+  color: #333; /* Darker color for status */
+}
+
+.score {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #333; /* Darker color for score */
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+.reset-score {
+  background-color: #dc3545;
+}
+
+.reset-score:hover {
+  background-color: #c82333;
+}
+
+/* Center the entire page vertically and horizontally */
+html, body {
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  width: 100vw;
+}
